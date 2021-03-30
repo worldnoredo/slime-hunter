@@ -6,7 +6,7 @@ public class enemy : common_for_character
 {
     // Start is called before the first frame update
     GameObject player;
-    private int speed = 30;
+    public int speed = 30;
     bool is_move;
     bool is_attack;
     void Start()
@@ -17,7 +17,7 @@ public class enemy : common_for_character
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (health < 0){
             be_die();

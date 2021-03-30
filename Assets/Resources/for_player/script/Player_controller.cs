@@ -13,9 +13,8 @@ public class Player_controller : MonoBehaviour
     public FireButton fire_button;
     public Bullet bullet;
     public GameObject shot_position;
-
-    public player_status_render player_status_render;
     public GameObject enemy_health_render;
+    
     Vector2 move_rotate;
     Vector2 atk_rotate;
     private float reload_delay;
@@ -62,8 +61,7 @@ public class Player_controller : MonoBehaviour
             bulletInstan.set_damage(damage);
             reload_delay = reload_time;
         }
-        //update health renderer
-        player_status_render.update_health(gameObject.GetComponent<player>().get_cur_health_precent());
+
     }
     void detect_enemy(){
         GameObject[] enemy_list = GameObject.FindGameObjectsWithTag("Enemy");

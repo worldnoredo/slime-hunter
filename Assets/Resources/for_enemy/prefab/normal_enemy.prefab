@@ -89,6 +89,7 @@ MonoBehaviour:
   health: 100
   armor: 5
   damage: 20
+  speed: 100
 --- !u!95 &6314429919476561615
 Animator:
   serializedVersion: 3
