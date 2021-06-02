@@ -3,22 +3,29 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bullet
     - CameraFollowPlayer
-    - FireButton
+    - ClickButton
+    - DodgeButton
+    - EnergyButton
+    - EnergySkill
     - FixedJoystick
     - Player_controller
     - SpawnEnemy
+    - UpdateScene
+    - common_for_character
     - common_for_object
-    - enemy
+    - enemy_bullet
     - lose
     - mainmenu
+    - normal_enemy
     - pause
-    - player
+    - player_load_data
     - player_status_render
+    - range_enemy
+    - updateStat
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -42,8 +49,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -57,6 +67,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/mainmenu.unity:
     - Class: 1
@@ -110,23 +121,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3160}
     - Class: 114
-      Script: {instanceID: 3644}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 4312}
+      Script: {instanceID: 3652}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 4204}
+    - Class: 114
+      Script: {instanceID: 4324}
+    - Class: 114
+      Script: {instanceID: 4520}
+    - Class: 114
+      Script: {instanceID: 4664}
+    - Class: 114
+      Script: {instanceID: 4670}
+    - Class: 114
+      Script: {instanceID: 5118}
+    - Class: 114
+      Script: {instanceID: 5200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -203,27 +226,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3110}
     - Class: 114
-      Script: {instanceID: 3230}
+      Script: {instanceID: 3160}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3644}
+      Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 4200}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 3652}
     - Class: 114
-      Script: {instanceID: 4776}
+      Script: {instanceID: 4212}
+    - Class: 114
+      Script: {instanceID: 4520}
+    - Class: 114
+      Script: {instanceID: 4626}
+    - Class: 114
+      Script: {instanceID: 4670}
+    - Class: 114
+      Script: {instanceID: 4790}
+    - Class: 114
+      Script: {instanceID: 5118}
+    - Class: 114
+      Script: {instanceID: 5200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -249,6 +284,61 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/upgrade.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1800}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2502}
+    - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
+      Script: {instanceID: 2694}
+    - Class: 114
+      Script: {instanceID: 2828}
+    - Class: 114
+      Script: {instanceID: 3044}
+    - Class: 114
+      Script: {instanceID: 3052}
+    - Class: 114
+      Script: {instanceID: 3160}
+    - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -403,7 +493,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ce578482f31d20efadf833f44735f84b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: lose
@@ -463,7 +553,7 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 5d064456c40f7c34690dc0c9d079accc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bullet
@@ -529,10 +619,16 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: 2b153ce7d2c95f1df75a7fefd72860f5
+      Hash: 6be4e6d05d32415b7f70d275045928ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: player_status_render
+  - hash:
+      serializedVersion: 2
+      Hash: cffe3fd6391b06adae9e6ddd937ae81b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DodgeButton
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -547,7 +643,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 9074ad2e5f5ef27f81e4dd045ce9a0c5
+      Hash: 07f89a2d5320db1b33d0f3dd0c385a07
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnEnemy
@@ -601,6 +697,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: adf9e78a70c651accb6c2a6dfcd60b47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: updateStat
+  - hash:
+      serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -634,7 +736,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: FireButton
+    className: ClickButton
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -661,12 +763,6 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: f474808e0977090ca61c738591495c8e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: player
-  - hash:
-      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -679,10 +775,22 @@ ScriptsOnlyBuild:
     className: TMP_FrameRateCounter
   - hash:
       serializedVersion: 2
+      Hash: 5d064456c40f7c34690dc0c9d079accc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: enemy_bullet
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: f8e5ee759a42aa2cf0d85ee9036c5585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: range_enemy
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -695,6 +803,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a1571a606b54be434146ae9647d5a2ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateScene
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -721,7 +835,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 4e3da8e37ef52d0db9ec9ec1aa0d5928
+      Hash: 14717212e43f6966b1360ab73254b135
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player_controller
@@ -865,6 +979,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
+      Hash: 1dbf7d82d0d65af26cc73c627214aaaf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: enemy
+  - hash:
+      serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -955,10 +1075,10 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
-      Hash: bc73376862242179ebe821bcb6eb5c54
+      Hash: 1962914f106aa601ebdcecd1a11eb3c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: enemy
+    className: normal_enemy
   - hash:
       serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61
@@ -979,6 +1099,12 @@ ScriptsOnlyBuild:
     className: DropdownSample
   - hash:
       serializedVersion: 2
+      Hash: e634bbda9cb89be8f837f5eb8917ea15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnergyButton
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -991,7 +1117,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 9949bda3c9db5dd7cceed7bfbc47caa7
+      Hash: da620f26a75a52e3910424e53f000501
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: common_for_character
@@ -1081,6 +1207,12 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: player_load_data
+  - hash:
+      serializedVersion: 2
       Hash: abf1930d8126d0b2e00e9449129a0190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1097,8 +1229,15 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnergySkill
   platform: 13
   scenePathNames:
   - Assets/Scenes/mainmenu.unity
   - Assets/Scenes/playgame.unity
-  playerPath: C:/Users/Admin/Desktop/testgame.apk
+  - Assets/Scenes/upgrade.unity
+  playerPath: C:/Users/Admin/Desktop/slimehunter.apk

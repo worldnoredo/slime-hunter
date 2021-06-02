@@ -9,9 +9,7 @@ public class common_for_character: common_for_object
 
     //character status
     public int max_health;
-    [SerializeField]
     protected int health;
-
     public int armor;
     public int damage;
     
@@ -33,6 +31,7 @@ public class common_for_character: common_for_object
         int true_damage = t_damage * 100 / (100 + armor);
         if (true_damage == 0) true_damage = 1;
         health -= true_damage;
+        if (health < 0) health = 0;
         show_damage(true_damage);
     }
     public int get_cur_health(){

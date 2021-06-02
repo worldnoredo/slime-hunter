@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class common_for_object : MonoBehaviour
 {
-    void Delete(){
+    public void delete(){
         Destroy(gameObject);
     }
 }
