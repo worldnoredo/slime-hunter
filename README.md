@@ -2,12 +2,12 @@
 
 project cá nhân cho môn học phát triển ứng dụng di động.
 
-##Mô tả
+## Mô tả
 
 Trò chơi thể loại top-down. Người chơi điều khiển nhân vật của mình và tiêu diệt kẻ địch xung quanh.
 Xây dựng theo công nghệ Unity Engine. 
 
-##Xây dựng
+## Xây dựng
 
 1. Nhân vật
 
