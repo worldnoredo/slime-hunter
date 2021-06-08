@@ -45,6 +45,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Resources\for_common\script\status.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\Resources\for_player\script\Rocket.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Resources\for_scene\lose.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
@@ -101,8 +102,9 @@
      <Compile Include="Assets\Resources\for_scene\player_load_data.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Resources\for_player\script\EnergySkill.cs" />
-     <Compile Include="Assets\Resources\for_player\script\Rocket.cs" />
      <Compile Include="Assets\Resources\for_player\script\RocketExplosion.cs" />
+     <Compile Include="Assets\heal_item.cs" />
+     <Compile Include="Assets\SpawnItem.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

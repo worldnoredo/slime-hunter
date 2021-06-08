@@ -141,6 +141,7 @@ public class Player_controller : MonoBehaviour
         }
     }
 
+    //for other script
     public int get_target_cur_health_percent(){
         if (target != null) {
             return target.GetComponent<common_for_character>().get_cur_health_precent();
@@ -165,16 +166,16 @@ public class Player_controller : MonoBehaviour
     public float get_dodge_reload_delay(){
         return dodge_reload_delay;
     }
-
+    public float get_change_weapon_reload_delay(){
+        return change_weapon_reload_delay;
+    }
+    // for animation
     void change_in_dodge(){
         GetComponent<Animator>().SetTrigger("in_dodge");
         in_dodge = true;
-
     }
     void change_out_dodge(){
         in_dodge = false;
     }
-    public float get_change_weapon_reload_delay(){
-        return change_weapon_reload_delay;
-    }
+
 }
