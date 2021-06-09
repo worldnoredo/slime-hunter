@@ -24,4 +24,7 @@ public class mainmenu : MonoBehaviour
     public void upgradeClick(){
         SceneManager.LoadScene("upgrade");
     }
+    public void optionClick(){
+        SceneManager.LoadScene("musicsetting",LoadSceneMode.Additive);
+    }
 }

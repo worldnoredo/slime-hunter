@@ -14,9 +14,7 @@ public class player_load_data : MonoBehaviour
     float atk_speed;
     int armor;
     int money;
-     /// <summary>
-    /// Awake is called when the script instance is being loaded.
-    /// </summary>
+
     void Awake()
     {
         common = gameObject.GetComponent<common_for_character>();

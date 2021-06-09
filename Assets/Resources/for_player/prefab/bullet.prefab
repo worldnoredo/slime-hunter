@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291109506661122235}
-  m_LocalRotation: {x: -0.008724693, y: 0.034900945, z: 0.00015231171, w: 0.9993527}
+  m_LocalRotation: {x: -0.008721149, y: 0.034898166, z: 0.00030454918, w: 0.9993528}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5346632298578583114}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1, y: 4, z: -0.017}
+  m_LocalEulerAnglesHint: {x: -1, y: 4, z: 0}
 --- !u!61 &462359745184643403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10000
+  sound: {fileID: 5669243555685168151, guid: 3718f2ef37a55d146be05076cb116ec3, type: 3}
 --- !u!50 &6023838116775766856
 Rigidbody2D:
   serializedVersion: 4

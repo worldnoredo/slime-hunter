@@ -7,6 +7,12 @@ public class Bullet : common_for_object
     // Start is called before the first frame update
     public int speed = 10000;
     private int damage;
+    public GameObject sound;
+    
+    void Awake()
+    {
+        Instantiate(sound,transform.position,transform.rotation);
+    }
     void Start()
     {
         Rigidbody2D bulletRigid = GetComponent<Rigidbody2D>();

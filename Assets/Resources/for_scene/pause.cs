@@ -29,4 +29,7 @@ public class pause : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("mainmenu");     
     }
+    public void optionClick(){
+        SceneManager.LoadScene("musicsetting",LoadSceneMode.Additive);
+    }
 }

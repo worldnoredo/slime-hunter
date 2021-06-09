@@ -44,9 +44,11 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Resources\for_common\script\status.cs" />
+     <Compile Include="Assets\Resources\for_player\prefab\heal_item.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Resources\for_player\script\Rocket.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\audiosetting.cs" />
      <Compile Include="Assets\Resources\for_scene\lose.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -59,9 +61,10 @@
      <Compile Include="Assets\Resources\for_scene\SpawnEnemy.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+     <Compile Include="Assets\Resources\for_scene\SoundData.cs" />
      <Compile Include="Assets\Resources\for_scene\updateStat.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-     <Compile Include="Assets\Resources\for_player\ClickButton.cs" />
+     <Compile Include="Assets\Resources\for_player\script\ClickButton.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Resources\for_enemy\script\enemy_bullet.cs" />
@@ -84,6 +87,7 @@
      <Compile Include="Assets\Resources\for_scene\CameraFollowPlayer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+     <Compile Include="Assets\Resources\for_scene\SpawnItem.cs" />
      <Compile Include="Assets\Resources\for_enemy\script\normal_enemy.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\Resources\for_player\script\EnergyButton.cs" />
@@ -100,11 +104,10 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Resources\for_scene\player_load_data.cs" />
+     <Compile Include="Assets\EndSound.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Resources\for_player\script\EnergySkill.cs" />
      <Compile Include="Assets\Resources\for_player\script\RocketExplosion.cs" />
-     <Compile Include="Assets\heal_item.cs" />
-     <Compile Include="Assets\SpawnItem.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
