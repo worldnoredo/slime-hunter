@@ -67,7 +67,7 @@ MonoBehaviour:
   skill_reload_time: 20
   dodge_reload_time: 10
   change_weapon_reload_time: 3
-  range_detected: 200
+  range_detected: 100
   max_energy: 200
   skill_energy_cost: 100
   playerSprite: {fileID: 3596191298385539152}
@@ -76,10 +76,12 @@ MonoBehaviour:
   energy_button: {fileID: 0}
   dodge_button: {fileID: 0}
   change_weapon_button: {fileID: 0}
+  aim_button: {fileID: 0}
   bullet: {fileID: 977872943015585951, guid: 631f51d80af34e04591c1c8b19bec52a, type: 3}
   rocket: {fileID: 7391390571004565383, guid: 29d8f073d8d7c144ab4d6bf87c244abb, type: 3}
   energy_skill: {fileID: 6748094493182913371, guid: d1f29d7249720cb4e86bf6e1c1c03fba, type: 3}
   shot_position: {fileID: 3596191299139853551}
+  aim: {fileID: 0}
   money: 0
 --- !u!50 &3596191298113339295
 Rigidbody2D:

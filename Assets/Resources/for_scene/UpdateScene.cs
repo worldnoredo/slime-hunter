@@ -17,6 +17,7 @@ public class UpdateScene : MonoBehaviour
     public GameObject healthStat;
     public GameObject armorStat;
     public GameObject moneyStat;
+    public GameObject coin_sound;
     void Start()
     {
         LoadGame();
@@ -80,6 +81,7 @@ public class UpdateScene : MonoBehaviour
         updateAtkSpeedButton();
         updateArmorButton();
         updateHealthButton();
+        Instantiate(coin_sound,transform.position,transform.rotation);
     }
     void updateDamageButton(){
         damageStat.GetComponent<updateStat>().updateButton(money >= damage);

@@ -21,10 +21,12 @@ public class Player_controller : MonoBehaviour
     public ClickButton energy_button;
     public ClickButton dodge_button;
     public ClickButton change_weapon_button;
+    public ClickButton aim_button;
     public Bullet bullet;
     public Rocket rocket;
     public EnergySkill energy_skill;
     public GameObject shot_position;
+    public GameObject aim;
 
     public int money;
     private float fire_reload_delay;
@@ -119,16 +121,32 @@ public class Player_controller : MonoBehaviour
                 GetComponent<Animator>().SetBool("rocket",in_rocket);
                 change_weapon_reload_delay = change_weapon_reload_time;
             }
+            //aim_button
+            if (aim_button.checkPressed()){
+                target = null;
+                aim.SetActive(false);
+                target_nearest_enemy();
+            }
         }
 
     }
     //find enemy
     void detect_enemy(){
-        GameObject[] enemy_list = GameObject.FindGameObjectsWithTag("Enemy");
+        
         if (target!= null && Vector2.Distance(transform.position,target.transform.position) > range_detected ){
             target = null;
         }
-        if (enemy_list.Length != 0 && target == null) {
+        if (target == null){
+            aim.SetActive(false);
+            target_nearest_enemy();
+        }
+        if (target != null){
+            aim.transform.position = target.transform.position;
+        }
+    }
+    void target_nearest_enemy(){
+        GameObject[] enemy_list = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemy_list.Length != 0) {
             foreach (var each in enemy_list){
                 if (Vector2.Distance(transform.position,each.transform.position) < range_detected){
                     if (target == null){
@@ -139,8 +157,11 @@ public class Player_controller : MonoBehaviour
                 }
             }
         }
+        if (target != null){
+            aim.SetActive(true);
+            aim.GetComponent<Animator>().Play("Base Layer.aim_start");
+        }
     }
-
     //for other script
     public int get_target_cur_health_percent(){
         if (target != null) {

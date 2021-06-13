@@ -43,6 +43,12 @@ public class common_for_character: common_for_object
     public int get_cur_health_precent(){
         return (int)(health*100/max_health);
     }
+    public void set_stat(int s_health,int s_armor,int s_damage){
+        max_health = s_health;
+        health = s_health;
+        armor = s_armor;
+        damage = s_damage;
+    }
     
 }
 

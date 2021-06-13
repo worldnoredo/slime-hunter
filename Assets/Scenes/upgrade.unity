@@ -1169,6 +1169,7 @@ MonoBehaviour:
   healthStat: {fileID: 1357834433}
   armorStat: {fileID: 1883919761}
   moneyStat: {fileID: 1649767469}
+  coin_sound: {fileID: 5851207192018815009, guid: 8ac5c558e1f4fec48890f996aeed13de, type: 3}
 --- !u!1 &679205358
 GameObject:
   m_ObjectHideFlags: 0

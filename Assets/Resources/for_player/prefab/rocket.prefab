@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10000
   rocket_explosion: {fileID: 1374899651861893479, guid: 78fe52d14bbc7174794eec4f8042374e, type: 3}
+  sound: {fileID: 5669243555685168151, guid: 5a9202b85e1c29347b7e87882c7df3f1, type: 3}

@@ -54,4 +54,7 @@ public class enemy : MonoBehaviour
     protected void rotate_to_player(){
         gameObject.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right,player.transform.position-transform.position));
     }
+    public void set_money(int s_money){
+        money = s_money;
+    }
 }

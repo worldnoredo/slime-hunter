@@ -7,11 +7,13 @@ public class Rocket : common_for_object
     // Start is called before the first frame update
     public int speed = 10000;
     public RocketExplosion rocket_explosion;
+    public GameObject sound;
     private int damage;
     void Start()
     {
         Rigidbody2D bulletRigid = GetComponent<Rigidbody2D>();
         bulletRigid.AddForce(transform.right * speed);
+        Instantiate(sound,transform.position,transform.rotation);
     }
     void Update()
     {

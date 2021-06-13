@@ -6,9 +6,13 @@ using System;
 using System.IO;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class audiosetting : MonoBehaviour
 {
     public AudioMixer allmusic;
+    public Slider music_slider;
+    public Slider bgm_slider;
+    public Slider sfx_slider;
     void Awake()
     {
         LoadData();
@@ -36,10 +40,13 @@ public class audiosetting : MonoBehaviour
             allmusic.SetFloat("music",data.musicValue);
             allmusic.SetFloat("bgm",data.bgmValue);
             allmusic.SetFloat("sfx",data.sfxValue);
+            music_slider.value = data.musicValue;
+            bgm_slider.value = data.bgmValue;
+            sfx_slider.value = data.sfxValue;
             Debug.Log("Sound data loaded!");
         }
         else {
-            SaveData(0,0,0);
+            SaveData(-5,-5,-5);
             LoadData();
         }
     }

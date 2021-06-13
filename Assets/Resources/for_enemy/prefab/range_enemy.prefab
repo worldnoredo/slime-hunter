@@ -151,8 +151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 5
+  money: 1
   speed: 30
-  range: 150
+  range: 50
   bullet: {fileID: 873966977794382720, guid: 9fb2b44cb2052634fb838d49cb5f0933, type: 3}
 --- !u!50 &-1341430877777340123
 Rigidbody2D:
