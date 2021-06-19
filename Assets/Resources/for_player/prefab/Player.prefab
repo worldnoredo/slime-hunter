@@ -96,7 +96,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 100
-  m_LinearDrag: 0
+  m_LinearDrag: 100
   m_AngularDrag: 1000
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3596191298385539154}
   - component: {fileID: 3596191298385539153}
   m_Layer: 6
-  m_Name: gunner
+  m_Name: player_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

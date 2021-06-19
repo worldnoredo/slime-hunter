@@ -6111,7 +6111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.12156863, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17203,7 +17203,7 @@ GameObject:
   - component: {fileID: 1627099450}
   - component: {fileID: 1627099449}
   m_Layer: 0
-  m_Name: SpawnNormalEnemy
+  m_Name: SpawnEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19168,10 +19168,6 @@ PrefabInstance:
     - target: {fileID: 3596191298113339294, guid: 9b176377a5f0a414bac62e0e7a3726cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3596191298113339295, guid: 9b176377a5f0a414bac62e0e7a3726cb, type: 3}
-      propertyPath: m_LinearDrag
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3596191298385539152, guid: 9b176377a5f0a414bac62e0e7a3726cb, type: 3}
       propertyPath: m_Name
